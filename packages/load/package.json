@@ -1,0 +1,18 @@
+{
+  "name": "@head.js/head.js-load",
+  "version": "0.1.0",
+  "description": "@head.js/head.js-load",
+  "main": "index.js",
+  "scripts": {
+    "build": "terser --mangle --compress --beautify beautify=false,comments=false,max_line_len=120,indent_level=0 --timings --output ./load.min.js ./load.js && gulp && del load.min.js"
+  },
+  "author": "Albert Hbrls<shuaizhexu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "del-cli": "4.0.1",
+    "gulp": "4.0.2",
+    "gulp-header": "2.0.9",
+    "gulp-rev": "9.0.0",
+    "terser": "4.8.0"
+  }
+}
